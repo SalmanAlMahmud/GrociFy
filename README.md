@@ -1,40 +1,72 @@
-# Welcome to your Expo app 👋
+# 🛒 Grocify
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Grocify is a modern grocery shopping application built with Expo React Native. The project uses Clerk authentication, Expo Router, NativeWind, and TypeScript to provide a smooth and secure shopping experience.
 
-## Get started
+## 🚀 Tech Stack
 
-1. Install dependencies
+- Expo SDK 57
+- React Native
+- Expo Router
+- TypeScript
+- Clerk Authentication
+- NativeWind
+- Sentry
+- React Native Keyboard Controller
 
-   ```bash
-   npm install
-   ```
+## 📦 Getting Started
 
-2. Start the app
-
-   ```bash
-   npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
+### 1. Install dependencies
 
 ```bash
-npm run reset-project
+npm install
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+### 2. Configure environment variables
 
-Author : Salman Al Mahmud
+Create a `.env` file in the project root and add the required Clerk and Sentry keys.
 
+Example:
 
+```env
+EXPO_PUBLIC_CLERK_PUBLISHABLE_KEY=your_publishable_key
+CLERK_SECRET_KEY=your_secret_key
+EXPO_PUBLIC_SENTRY_DSN=your_sentry_dsn
+```
+
+### 3. Start the development server
+
+```bash
+npx expo start
+```
+
+For Android Development Build:
+
+```bash
+npx expo run:android
+```
+
+## 📁 Project Structure
+
+```
+src/
+ └── app/
+      ├── _layout.tsx
+      ├── index.tsx
+      ├── sso-callback.tsx
+      └── (auth)/
+            ├── _layout.tsx
+            └── sign-in.tsx
+```
+
+## 👨‍💻 Authors
+
+- Salman Al Mahmud
+- Simanta Das
+- Wasik Imam
+- Priyanka Das
+- Azrin Hossain  Adiba
+- Suraiya Rahman Etu
+
+---
+
+Built with ❤️ using Expo & React Native.
